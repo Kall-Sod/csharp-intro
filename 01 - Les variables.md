@@ -5,7 +5,7 @@ Une variable est un emplacement mémoire qui a :
 - un nom
 - une valeur courante
 
-Voici le code pour déclarer une variable nommée ```age``` qui est un entier et pour valeur initiale 5 :
+Voici le code pour déclarer une variable nommée ```age``` qui est un entier et a pour valeur initiale 18 :
 ```
 int age = 18;
 ```
@@ -58,16 +58,16 @@ public class Program
 	{
 		int age = 18; 		// age contient 18
 		int ageMinimum = 0; 	// age contient 18, ageMinimum contient 0
-		int ageMaximum = 99; 	// age contient 18, ageMinimum contient 0, ageMaximum contient 0
+		int ageMaximum = 99; 	// age contient 18, ageMinimum contient 0, ageMaximum contient 99
 		
 		// on va copier la valeur contenue dans age dans la variable ageMinimum
 		// attention : seule la valeur est copiée : ageMinimum n'est pas "liée" à age 
-		ageMinimum = age;	// age contient 18, ageMinimum contient 18, ageMaximum contient 0
+		ageMinimum = age;	// age contient 18, ageMinimum contient 18, ageMaximum contient 99
 	
 		// la partie à droite de l'égalité va d'abord être évaluée et le résultat sera placé dans age
 		// 	-> age + 20 : on lit la valeur courante de age (18) et on y ajoute 20 : le résultat de l'évaluation de cette partie vaut 38
 		//	-> age = 38 : on assigne à age la valeur 38
-		age = age + 20;		// age contient 38, ageMinimum contient 18, ageMaximum contient 0
+		age = age + 20;		// age contient 38, ageMinimum contient 18, ageMaximum contient 99
 	
 		// on copie la valeur courante de age (38) dans la variable ageMaximum
 		ageMaximum = age;	// age contient 38, ageMinimum contient 18, ageMaximum contient 38
